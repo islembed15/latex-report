@@ -1,0 +1,211 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{array}
+
+% Colors
+\definecolor{darkred}{RGB}{150,30,30}
+\definecolor{darkgray}{RGB}{80,80,80}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkred,
+    urlcolor=darkred,
+    citecolor=darkred
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\color{darkred}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\color{darkgray}}{}{0em}{}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small Portfolio Report --- Moussa Islem Bedboudi}
+\lhead{\small GISMA University, Berlin}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\LARGE\bfseries Computer Science Portfolio Report\par}
+\vspace{0.5cm}
+\rule{0.6\textwidth}{1pt}\\[0.4cm]
+{\Large Moussa Islem Bedboudi\par}
+\vspace{0.3cm}
+{\Large GH 1049242 \par}
+{\normalsize B.Sc. Computer Science Student\par}
+{\normalsize GISMA University, Berlin, Germany\par}
+\vspace{0.3cm}
+{\small
+\href{mailto:islembed15@gmail.com}{islembed15@gmail.com} \quad $\bullet$ \quad
++49 152 15465924\\[0.2cm]
+\href{https://islembed15.github.io/protfolio/}{https://islembed15.github.io/protfolio/}\\[0.2cm]
+\href{https://github.com/islembed15}{https://github.com/islembed15}
+}
+\vspace{0.4cm}
+\rule{0.6\textwidth}{1pt}\\
+\vfill
+{\small Berlin, Germany \quad --- \quad }
+\end{titlepage}
+
+% Table of Contents
+\tableofcontents
+\newpage
+
+% -------------------------------------------------------------------
+\section{Introduction}
+
+This report is a supplement to my computer science portfolio, which was submitted as part of the
+portfolio as a student job open all to everyone
+Some of the things it includes are my CV (resume), personal projects and a github paged site,
+
+A short general overview of my engineering experience and tech stack
+The aim of this report is generalisation of design, structure and content of the
+portfolio; to justify the choices in building it; to justify instruments and
+technology utilised; and to reflect on the benefits and drawbacks of
+the current submission.
+
+% -------------------------------------------------------------------
+\section{Portfolio URLs}
+
+\subsection{Portfolio Website}
+The live portfolio website is hosted via GitHub Pages and can be accessed at:
+
+\begin{center}
+\href{https://islembed15.github.io/protfolio/}{\texttt{https://islembed15.github.io/protfolio/}}
+\end{center}
+
+\subsection{GitHub Repository}
+All source files --- including the HTML/CSS, images, CV, and project materials ---
+are stored in the following public GitHub repository:
+
+\begin{center}
+\href{https://github.com/islembed15/protfolio}{\texttt{https://github.com/islembed15/protfolio}}
+\end{center}
+
+% -------------------------------------------------------------------
+\section{Structure of the Portfolio Website and Repository}
+
+\subsection{Website Structure}
+The portfolio is a one page website split into six, clearly labelled sections.
+Accessed through the fixed navigation bar at the top of the page:
+
+\begin{enumerate}[leftmargin=2cm]
+    \item \textbf{Home} --- A pleasant, hero section introducing my name and profession with links
+    to my social profiles (GitHub, LinkedIn, X/Twitter, GitLab).
+    \item \textbf{About} --- A short personal background on who I am and where I study
+    Between GISMA University, language skills and hobbies A language
+    There is also shown the proficiency summary.
+    \item \textbf{Skills} --- A quick glance of the programming languages and technologies that I
+    Technical Skills: Four languages (Python, Java, C++, HTML5, CSS3 Git SQL) and not to mention Soft
+    skills
+    Like Team collaboration, Time Management, and Self Learning.
+    \item \textbf{Resume} --- A brief description of my academic background. at GISMA Univer-
+    sity, 2025–2029) and work experience (accountant in Algeria, cashier
+    role) and a link to download the whole AltaCV PDF
+\end{enumerate}
+
+\subsection{Repository Structure}
+The GitHub repository is organised as follows:
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{File / Directory} & \textbf{Description} \\
+\midrule
+\texttt{index.html}       & Main single-page HTML document \\
+\texttt{style.css}        & Custom stylesheet for layout and theming \\
+\texttt{images/}          & Profile photo and any graphic assets \\
+\texttt{CV/}              & LaTeX-generated AltaCV PDF \\
+\texttt{README.md}        & Repository description and usage notes \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% -------------------------------------------------------------------
+\section{Design Decisions}
+
+\subsection{Single-Page Layout}
+We kept it simple with a one pager, minimal user emvironments. Hiring managers can
+You can scroll all content in a single page, which less friction 
+and keeps the experience fast.
+
+\subsection{Navigation Bar}
+They also have a fixed top nav with "smoth-scroll" anchor links to each section. This en-
+The ensures that visitors can skip straight to the information most pertinent to them, such as
+clicking on Projects or Resume directly — without having to scroll manually through irrelevant content.
+
+\subsection{Clean and Professional Visual Theme}
+The colour scheme is a dark-red accent on white — mimicking the colour scheme of the AltaCV-generated CV. Doing so creates a visual consistency between their website and the PDF, supporting consistent messaging across their personal brand.
+
+\subsection{Responsive Layout}
+The webpage uses a responsive CSS layout so that it adapts to different screen sizes,
+including mobile devices. This ensures the portfolio looks presentable whether viewed
+on a laptop, tablet, or smartphone.
+A responsive CSS layout witnessing the page scales in different sizes of screens including mobile devices. Such a way that it will make the portfolio look presentable — whether she is on a laptop, tablet, or smartphone.
+
+\subsection{GitHub Pages Hosting}
+After selecting a static page generator, we decided to host on GitHub Pages which is well integrated with the It is free, does not require any server setup, and automatically deploys the contents of a repository when new commits are pushed to the main branch
+
+\subsection{LaTeX-Created CV}
+This CV is made using the AltaCV LaTeX template. LaTeX was chosen Because it produces well-formatted documents, LaTeX is used extensively in research and academic This information should also be available as a PDF and if so, this PDF can be either embedded in or linked from the dataspiders on technical contexts portfolio without quality loss.
+
+% -------------------------------------------------------------------
+\section{Tools and Technologies}
+
+To create this portfolio, the following tools and technologies were used:
+
+\begin{itemize}
+    \item \textbf{HTML5 \& CSS3} ---
+    \item \textbf{Git \& GitHub} ---
+    \item \textbf{GitHub Pages} ---
+    \item \textbf{LaTeX (AltaCV template)} ---
+    \item \textbf{Devicons CDN} ---
+    \item \textbf{Visual Studio Code} ---
+\end{itemize}
+
+% -------------------------------------------------------------------
+\section{Reflection: Strengths and Weaknesses}
+
+\subsection{Strengths}
+\begin{itemize}
+    \item \textbf{Consistent personal branding.} The colours and fonts match  It also helps to create a coherent image—the website and the CV talk to each other when the hiring manager sees them both.
+    \item \textbf{Complete content.} All There is for you to fill up — bio, skills, projects, Resume Being able to find the information in these pages — company name, address and contact details are all clearly labelled.
+    \item \textbf{Accessible via public URLs.} The website and GitHub repository are respectively available for free access, it allows evaluators to easily moderate things without creating a login.
+    \item \textbf{LaTeX CV.} Familiarity with professional docs The AltaCV based CV The tools are very usual across academic and technical sectors.
+    \item \textbf{Multilingual profile.} Fluently speaking in Arabic, English and the level of  French and German.
+\end{itemize}
+
+\subsection{Weaknesses and Areas for Improvement}
+\begin{itemize}
+    \item \textbf{No live project demos.} There are two projects mentioned
+    ( Student Management System and Weather Application).These both have not hosted demos or a detailed README page in dedicated reposetry yet. 
+    The portfolio could be so much stronger with adding live demos or at the very least well documented repos/screenshots.
+    \item \textbf{Limited JavaScript interactivity.} Current portfolio is made using only HTML/ CSS. Incorporating interactive elements (like a filterable project grid or an animated More tangible evidence of front-end development skills (for example, skill-progress bar)
+    \item \textbf{No dedicated project repositories.} Links to projects are currently routed to the generic If we talk about repositories, it is all-> GitHub profile not each repository with code and documentation.
+    \item \textbf{Accessibility improvements.} Some images contain no alt text attribute. Adding these will make it more accessible by a screen reader and take care of search-
+    \item \textbf{Future additions.} Intentions for upcoming iterations include a blog section to express progress, certifications (such as online courses), and new projects when they are developed throughout the B.Sc. programme.
+\end{itemize}
+
+% -------------------------------------------------------------------
+\section{Conclusion}
+
+The purpose of this portfolio is to showcase my technical skillset and education as a first year Computer Science student at GISMA University, Berlin. It is hosted at:
+
+\href{https://islembed15.github.io/protfolio/}{\texttt{islembed15.github.io/protfolio}}
+and stored in a public GitHub repository. Your design decisions should prioritise clarity, consistency and navigation of a hiring manager. The portfolio does however lay down a solid baseline for future improvement — most notably covering the ability to demonstrate projects live and engaging more deeply with interactivity, but something that will develop as my studies and practical experiences grow.
+
+\end{document}
